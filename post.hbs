@@ -1,0 +1,54 @@
+{{!< default}}
+
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+
+<main class="mt-5">
+    <div class="container">
+
+        <div class="post-info">
+            <h3 class="blog-title">{{ title }}</h3>
+        </div>
+        
+        <div class="card bottom-content post-content {{ passed_class }}">
+            <div class="card-body">
+                <div class="left">
+
+                    {{content}}
+
+                </div>
+                <span class="separator"></span>
+                <div class="right">
+                    <div class="widget">
+                        <h5 class="widget-title">Take this ride with me...</h5>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Need your best email friend...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary">Join the ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{#if tags}}
+                    <div class="widget">
+                        <h5 class="widget-title">Topics</h5>
+                        
+                        <ul class="tags">
+                            {{#foreach tags limit="3"}}
+                            <li><a href="{{url}}">{{name}}</a></li>
+                            {{/foreach}}
+                        </ul>
+                        
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+{{/post}}

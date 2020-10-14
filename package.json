@@ -1,0 +1,42 @@
+{
+    "name": "ughost",
+    "description": "Personal Portfolio & Blog Theme for GHOST",
+    "demo": "https://travis-3.ghost.io",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "author": {
+        "name": "Mashiur Rahman",
+        "email": "mashiur.dev@gmail.com",
+        "url": "https://mashiurz.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Personal",
+            "Minimal",
+            "Blog",
+            "Magazine"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/.git"
+    },
+    "config": {
+        "posts_per_page": 8
+    }
+
+}

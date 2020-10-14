@@ -1,0 +1,50 @@
+<div class="card bottom-content {{ passed_class }}">
+    
+    {{#if @first}}
+	<svg xmlns="http://www.w3.org/2000/svg" width="124.951" height="180.975" class="arrow">
+        <path d="M63.67 148.078c1.165-4.326 1.813-10.268 2.757-16.058a13.614 13.614 0 00.133-1.656 2.048 2.048 0 00-1.597-1.972c-2.683-.414-5.07.872-5.635 3.27s-1.006 5.077-1.408 7.643a183.188 183.188 0 01-6.733 29.164c-1.085 3.312-.288 4.385 3.173 4.615a42.01 42.01 0 0013.75-1.29c6.965-1.882 13.855-3.997 20.768-6.07a7.742 7.742 0 002.38-1.362 1.759 1.759 0 00.612-1.98 1.909 1.909 0 00-1.517-1.43 7.2 7.2 0 00-2.732.105c-2.515.606-4.947 1.526-7.436 2.225q-7.743 2.167-15.52 4.217a1.989 1.989 0 01-.907-.34 2.694 2.694 0 01.54-.85 78.257 78.257 0 0015.343-14.303 81.23 81.23 0 0013.369-22.88c1.553-3.951 3.209-7.88 4.643-11.882a70.259 70.259 0 004.45-22.21 41.765 41.765 0 00-1.926-13.678A26.54 26.54 0 0085.19 64.478c-.68-.299-1.402-.513-2.043-.874a2.314 2.314 0 01-1.304-2.273c.184-2.392.488-4.78.648-7.176.86-12.471-3.337-23.33-11.115-32.81A62.315 62.315 0 0047.24 3.175a54.988 54.988 0 00-5.163-2.012 5.114 5.114 0 00-5.136 1.264 1.99 1.99 0 00.329 3.257c2.15.972 4.445 1.834 6.602 2.878a58.6 58.6 0 0123.825 20.234 48.893 48.893 0 015.275 10.361c2.497 6.775 2.648 13.733 1.614 20.784a1.793 1.793 0 01-1.879 1.656c-1.292.094-2.583.128-3.877.234-14.066 1.165-23.667 8.5-29.367 21.254a20.454 20.454 0 00-2.132 9.648 20.7 20.7 0 00.763 4.926 10.077 10.077 0 009.517 7.231 20.676 20.676 0 0012.114-3.354 31.072 31.072 0 007.054-6.216 61.432 61.432 0 0011.777-20.566c.464-1.39 1.062-2.748 1.635-4.1a1.389 1.389 0 011.912-.46c.312.19.639.373.948.575A24.3 24.3 0 0193.678 86.46c1.412 6.26 1.008 12.495.041 18.743a83.118 83.118 0 01-5.106 16.976c-1.523 3.97-3.217 7.866-4.784 11.827a32.394 32.394 0 01-4.929 8.646q-6.147 7.51-12.578 14.776a39.262 39.262 0 01-4.613 3.934.624.624 0 01-.488-.112.532.532 0 01-.297-.354 19.093 19.093 0 01.314-2.185c.677-3.084 1.397-6.147 2.432-10.634zm8.366-76.199a40.187 40.187 0 01-3.785 9.813A71.735 71.735 0 0157.95 96.08a10.412 10.412 0 01-5.026 3.304 6.41 6.41 0 01-8.486-5.522 15.2 15.2 0 01.764-7.11c.745-1.894 1.46-3.807 2.334-5.635 4.098-8.558 11.142-13.046 20.443-14.105a16.084 16.084 0 013.3.156 1.666 1.666 0 011.362 2.024c-.16.914-.402 1.807-.605 2.687z" fill="#e8e7ef"/>
+    </svg>
+	{{/if}}
+
+    <div class="card-body">
+        <div class="left">
+            <h3 class="blog-title"><a href="{{ url }}">{{ title }}</a></h3>
+
+            {{ excerpt characters='400' }}
+
+            {{!-- <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> --}}
+        </div>
+        <span class="separator"></span>
+        <div class="right">
+            <div class="widget">
+                <h5 class="widget-title">Take this ride with me...</h5>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Need your best email friend...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">Join the ride</button>
+                    </div>
+                </div>
+            </div>
+
+            {{#if tags}}
+            <div class="widget">
+                <h5 class="widget-title">Topics</h5>
+                
+                <ul class="tags">
+                    {{#foreach tags limit="3"}}
+                    <li><a href="{{url}}">{{name}}</a></li>
+                    {{/foreach}}
+                </ul>
+                
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</div>

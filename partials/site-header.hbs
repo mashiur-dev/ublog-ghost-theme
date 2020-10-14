@@ -1,0 +1,39 @@
+<header>
+    <div class="container">
+        <div class="hero-section">
+            <div class="left">
+                <img src="{{ asset 'images/hero-picture@2x.png' }}" class="hero-image" alt="{{@site.title}}" />
+            </div>
+            <div class="right">
+                <h1 class="sr-only">SaaSpnr</h1>
+                <h2 class="hero-heading">Hey, <mark>I'm Travis.</mark> I'm a SaaS obsessed founder who blogs his journey here. It's nice to meey you. 
+                    Follow along as I build more lifestyle SaaS business. You can also catch me on Twitter over at <mark>@saaspnr</mark>
+                </h2>
+                {{!-- {{#if @site.description}}
+                <h2 class="hero-heading">{{@site.description}}</h2>
+			    {{/if}} --}}
+                <div class="hero-links">
+                    <a href="/">Home <img src="{{ asset 'images/writing.png' }}" alt="" /></a>
+                    <a href="#">My Stacks <img src="{{ asset 'images/pancakes.png' }}" alt="" /></a>
+                    
+                    {{ navigation }}
+
+                </div>
+                <ul class="saas-record-list">
+                    <li class="saas-record">
+                        <h3 class="title">My first SaaS</h3>
+                        <span class="value">$683,000 ARR</span>
+                    </li>
+                    <li class="saas-record">
+                        <h3 class="title">My 2nd SaaS</h3>
+                        <span class="value">$0 MRR</span>
+                    </li>
+                    <li class="saas-record">
+                        <h3 class="title">My 3rd SaaS</h3>
+                        <span class="value">$0 ARR</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

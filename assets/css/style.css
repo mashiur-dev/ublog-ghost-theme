@@ -1,0 +1,304 @@
+:root {
+	--body-color: #59576A;
+	--heading-color: #171343;
+	--primary-color: #594EED;
+	--secondary-color: #22C397;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: var(--body-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--heading-color);
+}
+
+a {
+	color: var(--primary-color);
+}
+
+a:hover,
+a:focus {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+
+mark {
+	padding: .1rem .2em;
+	background-color: var(--body-color);
+	color: #fff;
+}
+
+/* top content */
+.hero-section {
+	display: flex;
+}
+
+.hero-section .right {
+	margin-left: 2rem;
+}
+
+.hero-image {
+	width: 30rem;
+}
+
+.hero-heading {
+	padding-top: 2rem;
+	margin-bottom: 3rem;
+	font-size: 1.6rem;
+	line-height: 1.4;
+}
+
+.hero-links {
+	margin-bottom: 3rem;
+}
+
+.hero-links a {
+	display: inline-block;
+	padding: .2rem .5rem;
+	margin-right: 1rem;
+	font-size: 1.2rem;
+	border-radius: 3px;
+	background-color: rgba(34,195,151,.08);
+	color: var(--secondary-color);
+}
+
+.saas-record-list {
+	padding-left: 0;
+	list-style: none;
+}
+
+.saas-record {
+	display: inline-block;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
+}
+
+.saas-record .title {
+	font-size: 1.1rem;
+	margin-bottom: .2rem;
+}
+
+.saas-record .value {
+	display: block;
+	padding: .3rem .7rem;
+	border-radius: 3px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	background-color: var(--primary-color);
+	color: #fff;
+	text-align: center;
+}
+
+/* bottom content */
+.bottom-content {
+	margin-bottom: 3rem;
+}
+
+.card {
+	box-shadow: 0 3px 6px rgba(0,0,0,.1);
+	border-color: #E6E5EF;
+}
+
+.bottom-content .card-body {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.8rem 2rem;
+}
+
+.bottom-content .card-body > div {
+	flex: 1 0 30%;
+}
+
+.bottom-content .separator {
+	margin: 0 2rem;
+	border-left: 1px solid #E8E7EF;
+}
+
+.bottom-content .arrow {
+	position: absolute;
+	top: -9rem;
+	right: 1.5rem;
+	display: none;
+}
+
+.card.bottom-content:first-child .arrow {
+	display: block;
+}
+
+.blog-title {
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.widget {
+	margin-bottom: 2rem;
+}
+
+.widget-title {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.tags {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.tags li {
+	display: inline-block;
+	margin-right: .5rem;
+}
+
+.tags li a {
+	display: block;
+	padding: .2rem .7rem;
+	border-radius: 2px;
+	background-color: var(--secondary-color);
+	color: #fff
+}
+
+.btn-primary,
+.btn-primary:hover, .btn-primary:focus {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.pagination {
+	text-align: center;
+	display: block;
+	margin: 2rem 0;
+}
+
+.loadmore.finished {
+	display: none;
+}
+
+.dev-credit {
+	text-align: right;
+	font-size: 12px;
+	margin-bottom: 1rem;
+}
+
+/*
+* styyle for ghost content
+*/
+
+.post-content h2,
+.post-content h3 {
+	outline: none;
+}
+body {
+	overflow: visible;
+}
+.post-full-content {
+	display: grid;
+	grid-template-columns: 1fr 0.2fr;
+	padding: 0 0 6vw;
+	margin: 0;
+}
+.toc-container {
+	order: 1;
+}
+.toc-container .toc {
+	position: sticky;
+	top: 70px;
+	min-width: 260px;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.6em;
+	padding: 0 0.8em;
+}
+.is-active-link::before {
+	background-color: #3eb0ef;
+}
+ol.toc-list {
+	margin: 0;
+}
+
+
+
+/* Adjust content wrapper */
+.post-content {
+    display: block;
+}
+
+.post-content .card-body {
+	display: block;
+}
+
+
+.post-content iframe {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.post-content .separator {
+	margin: 2rem 0rem;
+	border-bottom: 1px solid #E8E7EF;
+	display: block;
+}
+
+.post-content .widget {
+	width: 40%;
+	display: inline-block;
+	margin-right: 9%;
+}
+
+/* Adjustments to wide and full width cards */
+.kg-gallery-card,
+.kg-width-wide,
+.kg-width-full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kg-gallery-card > *,
+.kg-width-wide > *,
+.kg-width-full > *,
+figure.kg-width-full img {
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.post-full-content pre {
+    max-width: 0;
+}
+
+/*
+Responsive
+*/
+
+@media screen and (max-width: 992px) {
+	.hero-section {
+		flex-direction: column;
+	}
+
+	.hero-section .left {
+		text-align: center;
+	}
+
+	.hero-section .right {
+		margin-left: 0;
+	}
+	.post-content .widget {
+		width: 100%;
+		display: block;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.bottom-content .card-body {
+		flex-direction: column;
+	}
+
+	.bottom-content .right {
+		margin-top: 1.5rem;
+	}
+	
+}
