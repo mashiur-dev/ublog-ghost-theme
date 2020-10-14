@@ -1,7 +1,6 @@
-# Casper
+# uBlog
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
-
+A minimal personal theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of uBlog!
 &nbsp;
 
 ![screenshot-desktop](https://user-images.githubusercontent.com/353959/66987533-40eae100-f0c1-11e9-822e-cbaf38fb8e3f.png)
